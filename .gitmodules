@@ -4,3 +4,6 @@
 [submodule "examples/vendor/glfw"]
 	path = examples/vendor/glfw
 	url = https://github.com/glfw/glfw.git
+[submodule "wgpu"]
+	path = wgpu
+	url = https://github.com/45degree/wgpu.git
