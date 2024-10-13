@@ -214,11 +214,7 @@ typedef struct WGPUHubReport {
 
 typedef struct WGPUGlobalReport {
     WGPURegistryReport surfaces;
-    WGPUBackendType backendType;
-    WGPUHubReport vulkan;
-    WGPUHubReport metal;
-    WGPUHubReport dx12;
-    WGPUHubReport gl;
+    WGPUHubReport hub;
 } WGPUGlobalReport;
 
 typedef struct WGPUInstanceEnumerateAdapterOptions {
