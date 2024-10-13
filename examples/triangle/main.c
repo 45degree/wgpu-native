@@ -188,6 +188,13 @@ int main(int argc, char *argv[]) {
                              handle_request_adapter, &demo);
   assert(demo.adapter);
 
+  if (wgpuAdapterHasFeature(demo.adapter,
+                            WGPUNativeFeature_ShaderEarlyDepthTest)) {
+    printf("support early depth test\n");
+  } else {
+    printf("don't support early depth test\n");
+  }
+
   frmwrk_print_adapter_info(demo.adapter);
 
   wgpuAdapterRequestDevice(demo.adapter, NULL, handle_request_device, &demo);
